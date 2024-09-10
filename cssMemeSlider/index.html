@@ -4,50 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Meme Slider</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
         rel="stylesheet">
-    <title>CSS Meme Slider</title>
+    <link rel="stylesheet" href="/cssMemeSlider/style.css">
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__title">CSS Meme Slider about trendy mouse</h1>
+        <div class="container">
+            <h1 class="header__title">CSS Meme Slider about trendy mouse</h1>
+        </div>
     </header>
-    <section class="slider">
+    <div class="container container__slider">
         <div class="slider__wrapper">
+            <div class="slider__line">
+                <img id="slide-1" class="slider__img" src="./images/small/mem-1.jpg" alt="White mouse">
+                <img id="slide-2" class="slider__img" src="./images/small/mem-2.jpg" alt="Mouse in glasses and a suit">
+                <img id="slide-3" class="slider__img" src="./images/small/mem-3.jpg" alt="">
+                <img id="slide-4" class="slider__img" src="./images/small/mem-4.jpg" alt="">
+            </div>
+        </div>
+        <div class="slider__decscription">
             <div class="slider__content">
-                <div class="slider__slide">
-                    <img class="slider__img" src="" alt="">
-                </div>
-                <div class="slider__slide">
-                    <div class="slider__slide">
-                        <img class="slider__img" src="" alt="">
-                    </div>
-                    <div class="slider__slide">
-                        <img class="slider__img" src="" alt="">
-                    </div>
-                    <div class="slider__slide">
-                        <img class="slider__img" src="" alt="">
-                    </div>
-                </div>
-                <img class="slider__img" src="" alt="">
+            <p class="slider__text">I would like to try on different images</p>
             </div>
-            <div class="slider__decscription">
-                <p class="slider__text"></p>
-                <div class="navigation">
-                    <input type="radio" name="check" id="check-1" checked>
-                    <input type="radio" name="check" id="check-2">
-                    <input type="radio" name="check" id="check-3">
-                    <input type="radio" name="check" id="check-4">
-                    <input type="radio" name="check" id="check-5">
+            <div class="navigation">
+                <input type="radio" name="check" id="check-1" checked>
+                <input type="radio" name="check" id="check-2">
+                <input type="radio" name="check" id="check-3">
+                <input type="radio" name="check" id="check-4">
+                <input type="radio" name="check" id="check-5">
+            </div>
+        </div>
+    </div>
+    <!-- <section class="slider">
+        <div class="container">
+            <div class="slider__wrapper">
+                <div class="slider__content">
+                    <div class="slider__slide">
+                        <img id="slide-1" class="slider__img" src="./images/mem-1.jpg" alt="White mouse">
+                    </div>
+                    <div class="slider__slide">
+                        <img id="slide-2" class="slider__img" src="./images/mem-2.jpg"
+                            alt="Mouse in glasses and a suit">
+                    </div>
+                    <div class="slider__slide">
+                        <img id="slide-3" class="slider__img" src="./images/mem-3.jpg" alt="">
+                    </div>
+                    <div class="slider__slide">
+                        <img id="slide-4" class="slider__img" src="./images/mem-4.jpg" alt="">
+                    </div>
+                    <div class="slider__slide">
+                        <img id="slide-5" class="slider__img" src="./images/mem-5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider__decscription">
+                    <p class="slider__text"></p>
+                    <div class="navigation">
+                        <input type="radio" name="check" id="check-1" checked>
+                        <input type="radio" name="check" id="check-2">
+                        <input type="radio" name="check" id="check-3">
+                        <input type="radio" name="check" id="check-4">
+                        <input type="radio" name="check" id="check-5">
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-    </section>
+    </section> -->
 </body>
 
 </html>
