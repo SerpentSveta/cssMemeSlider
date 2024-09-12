@@ -14,33 +14,43 @@
 </head>
 
 <body>
-    <header class="header">
+ <header class="header">
         <div class="container">
             <h1 class="header__title">CSS Meme Slider about trendy mouse</h1>
         </div>
     </header>
-    <div class="container container__slider">
-        <div class="slider__wrapper">
-            <input type="radio" name="check" id="check-1" checked>
-            <input type="radio" name="check" id="check-2">
-            <input type="radio" name="check" id="check-3">
-            <input type="radio" name="check" id="check-4">
-            <input type="radio" name="check" id="check-5">
-            <div class="slider__line">
-                <img id="slide-1" class="slider__img" src="./images/small/mem-1.jpg" alt="White mouse">
-                <img id="slide-2" class="slider__img" src="./images/small/mem-2.jpg" alt="Mouse in glasses and a suit">
-                <img id="slide-3" class="slider__img" src="./images/small/mem-3.jpg" alt="">
-                <img id="slide-4" class="slider__img" src="./images/small/mem-4.jpg" alt="">
-                <img id="slide-4" class="slider__img" src="./images/small/mem-5.jpg" alt="">
-            </div>
+  <div class="container container__slider">
+    <div class="slider__wrapper">
+
+        <input type="radio" name="check" id="slide-1" checked>
+        <input type="radio" name="check" id="slide-2">
+        <input type="radio" name="check" id="slide-3">
+        <input type="radio" name="check" id="slide-4">
+        <input type="radio" name="check" id="slide-5">
+
+        <div class="slider__line">
+            <img class="slider__img-1" src="./images/small/mem-1.jpg" alt="White mouse">
+            <img class="slider__img-2" src="./images/small/mem-2.jpg" alt="Mouse in glasses and a suit">
+            <img class="slider__img-3" src="./images/small/mem-3.jpg" alt="">
+            <img class="slider__img-4" src="./images/small/mem-4.jpg" alt="">
+            <img class="slider__img-5" src="./images/small/mem-5.jpg" alt="">
         </div>
-        <div class="slider__decscription">
+
+        <div class="navigation">
+            <label for="slide-1" class="slider__button"><span class="slider__nav"></span></label>
+            <label for="slide-2" class="slider__button"><span class="slider__nav"></span></label>
+            <label for="slide-3" class="slider__button"><span class="slider__nav"></span></label>
+            <label for="slide-4" class="slider__button"><span class="slider__nav"></span></label>
+            <label for="slide-5" class="slider__button"><span class="slider__nav"></span></label>
+        </div>
+    </div>
+    <!-- <div class="slider__decscription">
             <div class="slider__content">
                 <p id="text-1" class="slider__text active-text">1I would like to try on different images</p>
-                <p id="text-1" class="slider__text">2I would like to try on different images</p>
-                <p id="text-1" class="slider__text">3I would like to try on different images</p>
-                <p id="text-1" class="slider__text">4I would like to try on different images</p>
-                <p id="text-1" class="slider__text">5I would like to try on different images</p>
+                <p id="text-2" class="slider__text">2I would like to try on different images</p>
+                <p id="text-3" class="slider__text">3I would like to try on different images</p>
+                <p id="text-4" class="slider__text">4I would like to try on different images</p>
+                <p id="text-5" class="slider__text">5I would like to try on different images</p>
             </div>
             <div class="navigation">
                 <label for="slide-1" class="slider__button active-button"></label>
@@ -49,8 +59,8 @@
                 <label for="slide-4" class="slider__button"></label>
                 <label for="slide-5" class="slider__button"></label>
             </div>
-        </div>
-    </div>
+        </div> -->
+</div>
 </body>
 
 </html>
