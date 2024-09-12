@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+body {
+    justify-content: center;
+    align-items: center;
+    font-family: "Playfair", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 49.7rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.container__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1b263b;
+    padding: 3rem;
+}
+
+.header__title {
+    margin-top: 1.9rem;
+    margin-bottom: 1.9rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.slider__wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.slider__line {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+@-moz-document url-prefix() {
+    .slider__line {
+        width: 500%;
+    }
+}
+
+.slider__line img {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.slider__wrapper input {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__nav {
+    display: block;
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 0.3rem;
+    border-radius: 50%;
+    border: #e0e1dd solid 0.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.slider__nav:hover {
+    background-color: #e0e1dd;
+}
+
+.navigation label {
+    padding: 0.3rem;
+}
+
+.navigation label:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navigation label:active {
+    cursor: default;
+}
+
+
+#slide-1:checked~.slider__decscription .navigation label[for="slide-1"] .slider__nav,
+#slide-2:checked~.slider__decscription .navigation label[for="slide-2"] .slider__nav,
+#slide-3:checked~.slider__decscription .navigation label[for="slide-3"] .slider__nav,
+#slide-4:checked~.slider__decscription .navigation label[for="slide-4"] .slider__nav,
+#slide-5:checked~.slider__decscription .navigation label[for="slide-5"] .slider__nav {
+    background-color: #415a77;
+    cursor: default;
+}
+
+#slide-1:checked~.slider__line {
+    transform: translateX(0%);
+}
+
+#slide-2:checked~.slider__line {
+    transform: translateX(-100%);
+}
+
+#slide-3:checked~.slider__line {
+    transform: translateX(-200%);
+}
+
+#slide-4:checked~.slider__line {
+    transform: translateX(-300%);
+}
+
+#slide-5:checked~.slider__line {
+    transform: translateX(-400%);
+}
+
+@-moz-document url-prefix() {
+    #slide-2:checked~.slider__line {
+        transform: translateX(-20%);
+    }
+
+    #slide-3:checked~.slider__line {
+        transform: translateX(-40%);
+    }
+
+    #slide-4:checked~.slider__line {
+        transform: translateX(-60%);
+    }
+
+    #slide-5:checked~.slider__line {
+        transform: translateX(-80%);
+    }
+}
+
+.slider__decscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider__content {
+    display: flex;
+}
+
+.slider__text {
+    display: none;
+    font-size: 1.6rem;
+    color: #e0e1dd;
+    transition: all 0.5s ease;
+}
+
+#slide-1:checked~.slider__decscription .slider__content #text-1,
+#slide-2:checked~.slider__decscription .slider__content #text-2,
+#slide-3:checked~.slider__decscription .slider__content #text-3,
+#slide-4:checked~.slider__decscription .slider__content #text-4,
+#slide-5:checked~.slider__decscription .slider__content #text-5 {
+    display: block;
+}
+
+@media (max-width: 670px) {
+    .slider__line img {
+        width: 100%;
+    }
+
+    .slider__decscription {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .slider__content {
+        order: 1;
+        align-self: flex-start;
+    }
+}
